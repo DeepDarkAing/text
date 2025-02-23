@@ -1,0 +1,116 @@
+<!-- 声明文档类型位html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 字符集 -->
+    <meta charset="UTF-8">
+    <!-- 设置网页在移动设备上的宽度和缩放比例 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI色图严选</title>
+    <style>
+        body {
+            background-image: url('img/bg.png');/* 替换为你的背景图片路径 */
+            background-size: cover;/* 使背景图片覆盖整个页面 */
+            background-repeat: no-repeat;/* 防止背景图片重复 */
+            margin: 0; /* 移除默认的body边距 */
+
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: calc(100% - 17px); /* 调整宽度以避免滚动条遮挡 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        #header button {
+            background-color: transparent;
+            border: none;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #header button:hover {
+            text-decoration: underline;
+        }
+
+        #小文本 {
+            font-size: 90%;
+            color: rgb(55, 55, 55);
+            font-style: italic;
+            font-family: "等线";
+            line-height: 1.5;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+
+        #整体 {
+            width: 80%;
+            /* 居中 */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+
+        #bili-radio {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1><b>AI色图严选</b></h1>
+        <button>退出登录</button>
+    </div>
+    <div id="整体">
+        <a style="text-decoration: none;" href="https://www.bilibili.com/" target="_blank">点击跳转bilibili</a>
+        开冲时间:
+        <!-- 时间以年月日时分秒的形式显示 -->
+        <span style="color: rgba(128, 128, 128, 0.5);">
+            <script>
+                document.write(new Date().toLocaleString());
+            </script>
+        </span>
+        <br>
+        <p style="font-size: 150%;line-height: 50%;"><b>死眠修女菲雅</b>4K60帧完整版</p>
+        <p id="小文本">
+            （昏暗的祷告室内，菲雅苍白的指尖抚过褪色者的铠甲）
+            <br>菲雅：褪色者大人...您的温度，让我想起黄金树还未破碎的岁月。（轻笑）但您为何发抖？我的怀抱令您不安吗？
+            <br>褪色者：你的体温比墓穴更冷。
+            <br>菲雅：（将额角贴上他的胸甲）温暖是需要代价的...就像孕育死诞者的温床，必须吞下冰冷的诅咒。（突然剧烈咳嗽）很快...我就会把被盗走的死亡还给您。
+            <br>褪色者：（按住剑柄）你到底在谋划什么？
+            <br>菲雅：（染血的嘴角扬起）当百足之环重新闭合时...
+        </p>
+        <!-- <video src="video/Elden Ring Fia Exprational 4K.MP4" controls autoplay width="100%"></video> -->
+        <!-- <span><img src="gif/cc.gif" style="width: 49.6%;height: 600px;"></span>
+        <span><img src="gif/cc2.gif" style="width: 49.6%;height: 600px;"></span> -->
+
+        <iframe id="bili-radio"
+            src="https://player.bilibili.com/player.html?aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1&high_quality=1&t=0&autoplay=true"
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+        <script>
+            document.getElementById("bili-radio").style.height = document.getElementById("bili-radio").scrollWidth * 0.5 + "px";
+        </script>
+
+
+    </div>
+
+
+</body>
+
+</html>
